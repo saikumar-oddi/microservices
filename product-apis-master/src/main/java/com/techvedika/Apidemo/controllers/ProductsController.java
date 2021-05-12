@@ -30,7 +30,7 @@ public class ProductsController {
     public Products createProduct(@RequestBody Products product) {
         return  productsService.createProduct(product);
     }
-		
+	//mapping for getting all products	
     @GetMapping("/product/getallproducts")
     public ResponseEntity<List<Products>> getAllProducts(
                         @RequestParam(defaultValue = "0") Integer pageNo, 
